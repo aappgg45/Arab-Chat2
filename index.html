@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🤖 ذكاء اصطناعي عربي — يرد من نفسه</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body dir="rtl">
+  <div class="chat-container">
+    <header>
+      <h1>🤖 روبوت المحادثة العربي</h1>
+      <p class="subtitle">بيرد من نفسه وبيتعلّم من كلامك محليًا</p>
+    </header>
+
+    <div id="chat-box" class="chat-box" aria-live="polite"></div>
+
+    <form id="chat-form" class="input-area" autocomplete="off">
+      <input id="user-input" type="text" placeholder="اكتب رسالتك هنا..." />
+      <button id="send-btn" type="submit">إرسال</button>
+    </form>
+
+    <div class="toolbar">
+      <button id="clear-memory" title="مسح التعلم المحلي">مسح ذاكرة التعلم</button>
+      <span class="hint">💡 كل محادثاتك تُستخدم لتحسين الردود داخل جهازك فقط</span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
